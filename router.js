@@ -2,7 +2,7 @@ function route(pathname) {
     console.log(`📌 라우터가 처리 중: ${pathname}`);
 
     if (pathname === '/') {
-        return "<h1>홈 페이지</h1>";
+        return "<h1>상우의 홈 페이지</h1>";
     } else if (pathname === '/about') {
         return "<h1>소개 페이지</h1><p>이 서버는 Node.js로 만들어졌습니다.</p>";
     } else if (pathname === '/contact') {
