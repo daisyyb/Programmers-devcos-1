@@ -1,5 +1,12 @@
+
+const mariadb = require('./database/connect/mariadb');
+
 function route(pathname) {
     console.log(`📌 라우터가 처리 중: ${pathname}`);
+
+    mariadb.query("SELECT * FROM product", function(err, rows){
+        console.log(rows);
+    })
 
     if (pathname === '/') {
         return "<h1>상우의 홈 페이지</h1>";
